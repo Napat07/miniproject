@@ -11,10 +11,12 @@ class App extends Component {
 	state = {
 		name: '',
 		price:''
+	
 	}
 
 	componentDidMount() {
 		this.props.getCountries()
+		console.log(process.env.REACT_APP_PP)
 	}
 
 	handleChange = e => {
@@ -43,6 +45,7 @@ class App extends Component {
 			name , price
 		})
 	}
+	
 
 	render() {
 		const { countries } = this.props
@@ -63,15 +66,7 @@ class App extends Component {
 				</form>
 			</div>
 
-			/*<div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>*/
+			
 		)
 	}
 }

@@ -6,6 +6,8 @@ const env = require('dotenv').config()
 
 const app = express();
 
+app.listen(process.env.PORT,() =>  console.log('server ready 80') );
+
 //app.listen(80)
 app.use(cors()); // เรียกใช้ผ่านโดเมนอื่นได้
 app.use(bodyParser.json()); // สำหรับอ่านข้อมูลจาก Axios
@@ -66,4 +68,3 @@ app.delete('/api/countries/:country_id', (req, res) => { // ลบประเ�
   console.log('Delete Country', id);
 });
 
-app.listen(process.env.PORT,() =>  console.log('server ready 80') );

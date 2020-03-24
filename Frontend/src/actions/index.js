@@ -1,5 +1,5 @@
 import axios from 'axios'
-const API_URL = 'http://localhost:8080/api/countries';
+const API_URL = `http://localhost:${process.env.REACT_APP_PP}/api/countries`;
 
 // READ
 export function getCountries() {
