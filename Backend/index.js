@@ -1,10 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const env = require('dotenv').config() 
+
 
 const app = express();
 
-app.listen(8080);
+//app.listen(80)
 app.use(cors()); // เรียกใช้ผ่านโดเมนอื่นได้
 app.use(bodyParser.json()); // สำหรับอ่านข้อมูลจาก Axios
 app.use(bodyParser.urlencoded({extended: true})); // ให้ผู้ใช้ป้อนข้อมูลเข้ามาได้
@@ -64,4 +66,4 @@ app.delete('/api/countries/:country_id', (req, res) => { // ลบประเ�
   console.log('Delete Country', id);
 });
 
-console.log('server is running on port 8080 .... ');
+app.listen(process.env.PORT,() =>  console.log('server ready 80') );
