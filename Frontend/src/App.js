@@ -45,7 +45,7 @@ class App extends Component {
 			name , price
 		})
 	}
-	
+	;;
 
 	render() {
 		const { countries } = this.props
