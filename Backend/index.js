@@ -4,10 +4,9 @@ const cors = require('cors');
 const env = require('dotenv').config() 
 const soap = require('soap');
 const url = 'https://passport.psu.ac.th/authentication/authentication.asmx?wsdl';
-
-
-
 const app = express();
+const routes = require('./routes')
+
 
 app.listen(process.env.PORT,() =>  console.log('server ready 80') );
 
@@ -71,9 +70,6 @@ app.delete('/api/countries/:country_id', (req, res) => { // ลบประเ�
   console.log('Delete Country', id);
 });
 
-app.get('/', routes.index);
-app.get('/login/callback', routes.loginCallback);
-app.get('/logout', routes.logout);
 
 const out = `
 <html>
@@ -99,7 +95,7 @@ app.get('/psupassport', (req, res) => {
 app.post('/psupassport', (req, res) => {
    soap.createClient(url, (err, client) => {
       if (err) {
-         res.redirect("http://localhost:80")
+         res.redirect("http://localhost:8055")
       }
       else {
          let user = {}
@@ -109,7 +105,7 @@ app.post('/psupassport', (req, res) => {
          client.GetStaffDetails(user, function (err, response) {
 
             if (err) {
-               res.redirect("http://localhost:80")
+               res.redirect("http://localhost:8055")
             }
             else {
                console.log(response);
@@ -118,7 +114,7 @@ app.post('/psupassport', (req, res) => {
                   req.session.expires = 60000
                   res.redirect("http://localhost:3000/#total")
                } else {
-                  res.redirect("http://localhost:80")
+                  res.redirect("http://localhost:8055")
                }
             }
          });
@@ -126,13 +122,5 @@ app.post('/psupassport', (req, res) => {
    });
 })
 
-app.get('/test', (req, res) => {
- if (req.session.access_token)
-      return res.sendStatus(200)
-   res.sendStatus(401)
-})
-
-
-app.listen(process.env.PORT, () => console.log('server running ' + process.env.PORT));
 
 
