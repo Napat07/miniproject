@@ -25,8 +25,12 @@ class App extends Component {
 		var name = e.target.name,
 			lastname = e.target.lastname,
 			position = e.target.position,
+			age = e.target.age,
 			value = e.target.value
-		this.setState({ [name]: value })
+		this.setState({ [name]:value ,
+						[lastname]:value,
+						[position]:value,
+						[age]:value})
 	}
 
 	handleSubmit = e => {
@@ -65,8 +69,8 @@ class App extends Component {
 				<form onSubmit={this.handleSubmit}>
 					<input type="text" name="name" placeholder="Name" onChange={this.handleChange} value={this.state.name} />
 					<input type="text" name="lastname" placeholder="Lastname" onChange={this.handleChange} value={this.state.lastname} />
-					<input type="text" name="position" placeholder="Position" onChange={this.handleChange} value={this.state.lastname} />
-					<input type="number" name="age" placeholder="Age" onChange={this.handleChange} value={this.state.lastname} />
+					<input type="text" name="position" placeholder="Position" onChange={this.handleChange} value={this.state.position} />
+					<input type="number" name="age" placeholder="Age" onChange={this.handleChange} value={this.state.age} />
 				
 					<button type="submit">Add</button>
 				</form>
