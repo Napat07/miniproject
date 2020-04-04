@@ -10,7 +10,9 @@ import CountryList from './CountryList'
 class App extends Component {
 	state = {
 		name: '',
-		price:''
+		lastname: '',
+		position: '',
+		age:''
 	
 	}
 
@@ -21,18 +23,20 @@ class App extends Component {
 
 	handleChange = e => {
 		var name = e.target.name,
+			lastname = e.target.lastname,
+			position = e.target.position,
 			value = e.target.value
 		this.setState({ [name]: value })
 	}
 
 	handleSubmit = e => {
 		e.preventDefault()
-		const { name  , price } = this.state
+		const { name  , lastname , position , age} = this.state
 		this.props.createCountry({
-			name,price
+			name,lastname,position,age
 		})
 		this.setState({
-			name: '',price:''
+			name: '',lastname:'', position:'' , age:''
 		})
 	}
 
@@ -40,9 +44,9 @@ class App extends Component {
 		this.props.deleteCountry(id)
 	}
 
-	handleUpdate = (id, name , price) => {
+	handleUpdate = (id, name , lastname , position , age) => {
 		this.props.updateCountry(id, {
-			name , price
+			name , lastname , position , age
 		})
 	}
 
@@ -51,7 +55,7 @@ class App extends Component {
 		const { countries } = this.props
 		return (
 			<div className="con">
-				<h1>CRUD Guitar lists</h1>
+				<h1>Staff lists</h1>
 				<ul>
 					{countries.map((country, index) => {
 						return <CountryList key={index} country={country} onDelete={this.handleDelete} onUpdate={this.handleUpdate} />
@@ -60,7 +64,9 @@ class App extends Component {
 			
 				<form onSubmit={this.handleSubmit}>
 					<input type="text" name="name" placeholder="Name" onChange={this.handleChange} value={this.state.name} />
-					<input type="number" name="price" placeholder="Price" onChange={this.handleChange} value={this.state.price} />
+					<input type="text" name="lastname" placeholder="Lastname" onChange={this.handleChange} value={this.state.lastname} />
+					<input type="text" name="position" placeholder="Position" onChange={this.handleChange} value={this.state.lastname} />
+					<input type="number" name="age" placeholder="Age" onChange={this.handleChange} value={this.state.lastname} />
 				
 					<button type="submit">Add</button>
 				</form>

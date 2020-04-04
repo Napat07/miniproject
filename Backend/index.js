@@ -29,11 +29,15 @@ app.get('/api/countries', (req, res) => { // ดึงค่าประเท�
 
 app.post('/api/countries', (req, res) => { // เพิ่มประเทศใหม่
   var name = req.body.name;
-  var price = req.body.price;
+  var lastname = req.body.lastname;
+  var position = req.body.position;
+  var age = req.body.age;
   Countries.push({
     id: Id++,
     name: name,
-    price: price
+    lastname:lastname,
+    position : position,
+    age: age
   });
   res.send(Countries);
   console.log('New Country', name);
@@ -42,12 +46,16 @@ app.post('/api/countries', (req, res) => { // เพิ่มประเทศ�
 app.put('/api/countries/:country_id', (req, res) => { // อัพเดทประเทศจากไอดี
   var id = req.params.country_id,
     name = req.body.name;
-    price = req.body.price
+    lastname = req.body.lastname;
+    position = req.body.position;
+    age = req.body.age
 
   Countries.map(Country => {
     if (Country.id == id) {
       Country.name = name;
-      Country.price = price
+      Country.lastname = lastname
+      Country.position = position
+      Country.age = age
     }
   });
   res.send(Countries);
