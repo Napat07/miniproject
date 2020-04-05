@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import axios from 'axios'
 import { getCountries, createCountry, deleteCountry, updateCountry } from './actions'
@@ -72,7 +73,7 @@ class App extends Component {
 					<input type="text" name="position" placeholder="Position" onChange={this.handleChange} value={this.state.position} />
 					<input type="number" name="age" placeholder="Age" onChange={this.handleChange} value={this.state.age} />
 				
-					<button type="submit">Add</button>
+					<button class="btn btn-success" type="submit">Add</button>
 				</form>
 			</div>
 

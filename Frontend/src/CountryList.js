@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class CountryList extends Component {
 	state = {
@@ -33,7 +34,7 @@ export default class CountryList extends Component {
 					<input type="text" name="position" value={position} onChange={this.handleChange} />
 					<input type="number" name="age" value={age} onChange={this.handleChange} />
 					
-					<button
+					<button class="btn btn-info"
 						onClick={() => {
 							onUpdate(country.id, name , lastname,position,age)
 							this.setState({ isEdit: false })
@@ -41,7 +42,7 @@ export default class CountryList extends Component {
 					>
 						Save
 					</button>
-					<button onClick={() => this.setState({ isEdit: false, 
+					<button class="btn btn-warning" onClick={() => this.setState({ isEdit: false, 
 															name: country.name , 
 															lastname: country.lastname,
 															position: country.position,
@@ -54,8 +55,8 @@ export default class CountryList extends Component {
 			return (
 				<a key={country.id}>
 					{country.id + '. ' + country.name + ' ' +'' + country.lastname + ' ' +': ' + country.position + ' '+': ' + country.age + ' '}
-					<button onClick={() => this.setState({ isEdit: true })}>Edit</button>
-					<button onClick={() => onDelete(country.id)}>Delete</button>
+					<button class="btn btn-warning" onClick={() => this.setState({ isEdit: true })}>Edit</button>
+					<button class="btn btn-danger" onClick={() => onDelete(country.id)}>Delete</button>
 				</a>
 			)
 		}
