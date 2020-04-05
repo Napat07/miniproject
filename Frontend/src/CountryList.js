@@ -52,11 +52,11 @@ export default class CountryList extends Component {
 
 		if (isEdit === false) {
 			return (
-				<li key={country.id}>
-					{country.id + '. ' + country.name + ' ' +'' + country.lastname + ' ' +'' + country.position + ' '+'' + country.age + ' '}
+				<a key={country.id}>
+					{country.id + '. ' + country.name + ' ' +'' + country.lastname + ' ' +': ' + country.position + ' '+': ' + country.age + ' '}
 					<button onClick={() => this.setState({ isEdit: true })}>Edit</button>
 					<button onClick={() => onDelete(country.id)}>Delete</button>
-				</li>
+				</a>
 			)
 		}
 	}
