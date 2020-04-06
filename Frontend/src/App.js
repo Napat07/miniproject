@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LoginForm from './components/LoginForm'
 
 import axios from 'axios'
 import { getCountries, createCountry, deleteCountry, updateCountry } from './actions'
@@ -60,6 +61,8 @@ class App extends Component {
 		const { countries } = this.props
 		return (
 			<div className="con">
+				        <LoginForm />
+
 				<h1>Staff lists</h1>
 				<ul>
 					{countries.map((country, index) => {
