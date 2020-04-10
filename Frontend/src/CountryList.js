@@ -53,11 +53,17 @@ export default class CountryList extends Component {
 
 		if (isEdit === false) {
 			return (
-				<a key={country.id}>
-					{country.id + '. ' + country.name + ' ' +'' + country.lastname + ' ' +': ' + country.position + ' '+': ' + country.age + ' '}
+				<table align="center">
+					<tr>
+						<a key={country.id}>
+						
+							{country.id + '. ' + country.name + ' ' +'' + country.lastname + ' ' +': ' + country.position + ' '+': ' + country.age + ' '} 
+					
 					<button class="btn btn-warning" onClick={() => this.setState({ isEdit: true })}>Edit</button>
-					<button class="btn btn-danger" onClick={() => onDelete(country.id)}>Delete</button>
+				<button class="btn btn-danger" onClick={() => onDelete(country.id)}>Delete</button> <br/>
 				</a>
+				</tr>
+				</table>
 			)
 		}
 	}

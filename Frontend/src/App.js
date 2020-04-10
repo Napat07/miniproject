@@ -13,8 +13,8 @@ class App extends Component {
 		name: '',
 		lastname: '',
 		position: '',
-		age:''
-	
+		age: ''
+
 	}
 
 	componentDidMount() {
@@ -28,20 +28,22 @@ class App extends Component {
 			position = e.target.position,
 			age = e.target.age,
 			value = e.target.value
-		this.setState({ [name]:value ,
-						[lastname]:value,
-						[position]:value,
-						[age]:value})
+		this.setState({
+			[name]: value,
+			[lastname]: value,
+			[position]: value,
+			[age]: value
+		})
 	}
 
 	handleSubmit = e => {
 		e.preventDefault()
-		const { name  , lastname , position , age} = this.state
+		const { name, lastname, position, age } = this.state
 		this.props.createCountry({
-			name,lastname,position,age
+			name, lastname, position, age
 		})
 		this.setState({
-			name: '',lastname:'', position:'' , age:''
+			name: '', lastname: '', position: '', age: ''
 		})
 	}
 
@@ -49,9 +51,9 @@ class App extends Component {
 		this.props.deleteCountry(id)
 	}
 
-	handleUpdate = (id, name , lastname , position , age) => {
+	handleUpdate = (id, name, lastname, position, age) => {
 		this.props.updateCountry(id, {
-			name , lastname , position , age
+			name, lastname, position, age
 		})
 	}
 
@@ -59,27 +61,55 @@ class App extends Component {
 	render() {
 		const { countries } = this.props
 		return (
-			<div className="con">
-				        <LoginForm />
-
+			<div >
+				<LoginForm />
+				<div class = "con">
 				<h1>Staff lists</h1>
-				<ul>
-					{countries.map((country, index) => {
-						return <CountryList key={index} country={country} onDelete={this.handleDelete} onUpdate={this.handleUpdate} />
-					})}
-				</ul>
-			
-				<form onSubmit={this.handleSubmit}>
-					<input type="text" name="name" placeholder="Name" onChange={this.handleChange} value={this.state.name} />
-					<input type="text" name="lastname" placeholder="Lastname" onChange={this.handleChange} value={this.state.lastname} />
-					<input type="text" name="position" placeholder="Position" onChange={this.handleChange} value={this.state.position} />
-					<input type="number" name="age" placeholder="Age" onChange={this.handleChange} value={this.state.age} />
-				
-					<button class="btn btn-success" type="submit">Add</button>
-				</form>
-			</div>
 
-			
+					<ul>
+						{countries.map((country, index) => {
+							return <CountryList key={index} country={country} onDelete={this.handleDelete} onUpdate={this.handleUpdate} />
+						})}
+					</ul>
+					<form onSubmit={this.handleSubmit}>
+
+						<table align="center">
+							<tbody>
+								<tr>
+									<td>Name</td>
+									<td>
+										<input type="text" name="name" placeholder="Name" onChange={this.handleChange} value={this.state.name} />
+									</td>
+								</tr>
+								<tr>
+									<td>Lastname</td>
+									<td>
+										<input type="text" name="lastname" placeholder="Lastname" onChange={this.handleChange} value={this.state.lastname} />
+									</td>
+								</tr>
+								<tr>
+									<td>Position</td>
+									<td>
+										<input type="text" name="position" placeholder="Position" onChange={this.handleChange} value={this.state.position} />
+									</td>
+								</tr>
+								<tr>
+									<td>Age</td>
+									<td>
+										<input type="number" name="age" placeholder="Age" onChange={this.handleChange} value={this.state.age} />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="btn btn-success" type="submit">Add</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+				</div>
+
 		)
 	}
 }
