@@ -61,7 +61,7 @@ class App extends Component {
 	render() {
 		const { countries } = this.props
 		return (
-			<div >
+			<div class = "All" >
 				<LoginForm />
 				<div class = "con">
 				<h1>Staff lists</h1>

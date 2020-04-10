@@ -1,6 +1,6 @@
 import React from 'react'
 import auth from '../firebase'
-
+import './LoginForm.css'
 class LoginForm extends React.Component {
   constructor(props) {
     super(props)
@@ -71,8 +71,9 @@ class LoginForm extends React.Component {
     }
 
     return (
-      <section className="section container">
-        <div className="columns is-centered">
+      <section className="section container">          
+        <h1>Login</h1>
+          <div className="columns is-centered">
           <div className="column is-half">
             <form onSubmit={this.onSubmit}>
               <div className="field">
