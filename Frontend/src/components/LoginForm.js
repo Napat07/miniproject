@@ -1,6 +1,9 @@
 import React from 'react'
 import auth from '../firebase'
 import './LoginForm.css'
+import ListStaff from './ListStaff'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 class LoginForm extends React.Component {
   constructor(props) {
     super(props)
@@ -63,9 +66,10 @@ class LoginForm extends React.Component {
 
     if (currentUser) {
       return (
-        <div>
+        <div class = 'cen'>
           <p>Hello {currentUser.email}</p>
-          <button onClick={this.logout}>Logout</button>
+          <button className="button is-link" onClick={this.logout}>Logout</button><br></br>
+          <ListStaff/>
         </div>
       )
     }
