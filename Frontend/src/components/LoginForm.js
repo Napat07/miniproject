@@ -66,18 +66,25 @@ class LoginForm extends React.Component {
 
     if (currentUser) {
       return (
-        <div class = 'cen'>
-          <p>Hello {currentUser.email}</p>
-          <button className="button is-link" onClick={this.logout}>Logout</button><br></br>
-          <ListStaff/>
+        <div>
+          <div class='right'>
+            <div >
+              <h6>Hello {currentUser.email}</h6>
+              <button className="button is-link" onClick={this.logout}>Logout</button><br></br>
+            </div>
+
+          </div>
+
+          <ListStaff />
         </div>
       )
+
     }
 
     return (
-      <section className="section container">          
+      <section className="section container">
         <h1>Login</h1>
-          <div className="columns is-centered">
+        <div className="columns is-centered">
           <div className="column is-half">
             <form onSubmit={this.onSubmit}>
               <div className="field">
