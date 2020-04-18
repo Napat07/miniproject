@@ -9,31 +9,31 @@ const initialForm = {
 const formReducer = (data = initialForm, action) => {
     switch (action.type) {
         case "CHANGE_NAME": return { ...data, name: action.name }
-        case "CHANGE_WEIGHT": return { ...data, weight: action.weight }
+        case "CHANGE_PRICE": return { ...data, price: action.price }
         case "CHANGE_IMG": return { ...data, img: action.img }
         //...data mean ==> each [name: "", weigth: 0, img: ""]
     }
     return data; //less than return itSelf
 }
 
-const bearReducer = (bears = [], action) => {
+const productReducer = (products = [], action) => {
     switch (action.type) {
-        case "GET_BEARS": return action.bears
-        case "ADD_BEAR": return [...bears, action.bear];
-        case "DELETE_BEAR" : return bears.filter( bear => +bear.id !== +action.id )
-        case "UPDATE_BEAR" : return bears.map(bear => {
-            if (+bear.id === +action.id ){
-                return action.bear
+        case "GET_products": return action.products
+        case "ADD_PRODUCT": return [...products, action.product];
+        case "DELETE_PRODUCT" : return products.filter( product => +product.id !== +action.id )
+        case "UPDATE_PRODUCT" : return products.map(product => {
+            if (+product.id === +action.id ){
+                return action.product
             }
             else
-                return bear 
+                return product 
         })
     }
-    return bears; //less than return itSelf
+    return products; //less than return itSelf
 }
 
 const rootReducer = combineReducers({
-    bears:bearReducer,
+    products:productReducer,
     form:formReducer,
 })
 export const store = createStore(rootReducer);

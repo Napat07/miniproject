@@ -1,11 +1,11 @@
-.bearcard-container {
+.productcard-container {
     width: 160px;
     border-radius: 4px;
     box-shadow: 0 0 6px 0 rgba(0,0,0,.15);
     overflow: hidden;
 }
 
-.bearcard {
+.productcard {
   height: 200px;
 
   background-size: cover;
@@ -15,7 +15,7 @@
   position: relative;
 }
 
-.bearcard-name {
+.productcard-name {
     position: absolute;
     left: 0;
     right: 0;
@@ -28,7 +28,7 @@
     color: white;
 }
 
-.bearcard-weight {
+.productcard-price {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -41,12 +41,12 @@
     color: rgb(252, 164, 0);
 }
 
-.bearcard-actions {
+.productcard-actions {
     background-color: white;
     display: flex;
 }
 
-.bearcard-actions > div {
+.productcard-actions > div {
     flex: 1;
     padding: 4px;
     text-align: center;
@@ -55,6 +55,6 @@
     transition: background-color .2s ease-in;
 }
 
-.bearcard-actions > div:hover {
+.productcard-actions > div:hover {
     background-color: rgb(255, 220, 154);
 }

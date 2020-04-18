@@ -7,14 +7,14 @@ const InputForm = props => {
     const { data, onChange } = props;
 
     const dispatch = useDispatch({})
-    const bears = useSelector(state => state.bears)
+    const products = useSelector(state => state.products)
     const form = useSelector(state => state.form)
 
-    const addBear = async () => {
-        const result = await axios.post(`http://localhost:${process.env.REACT_APP_PP}/api/bears/`, form)
+    const addProduct = async () => {
+        const result = await axios.post(`http://localhost:${process.env.REACT_APP_PP}/api/products/`, form)
         dispatch({ 
-            type: "ADD_BEAR", 
-            bear: {...form,id:bears.length > 0 ? bears[bears.length - 1].id+1 : 0} 
+            type: "ADD_PRODUCT", 
+            product: {...form,id:products.length > 0 ? products[products.length - 1].id+1 : 0} 
         })
     }
 
@@ -30,9 +30,9 @@ const InputForm = props => {
                         </td>
                     </tr>
                     <tr>
-                        <td>Weight</td>
+                        <td>Price</td>
                         <td>
-                            <input className='inpt' type="number" onChange={(e) => dispatch({ type: "CHANGE_WEIGHT", weight: e.target.value })} />
+                            <input className='inpt' type="number" onChange={(e) => dispatch({ type: "CHANGE_PRICE", price: e.target.value })} />
                         </td>
                     </tr>
                     <tr>
@@ -44,7 +44,7 @@ const InputForm = props => {
                     <tr>
                         <td></td>
                         <td>
-                            <button className='btn' onClick={addBear}>CREATE</button>
+                            <button className='btn' onClick={addProduct}>CREATE</button>
                         </td>
                     </tr>
                 </tbody>
