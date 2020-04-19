@@ -74,7 +74,9 @@ class LoginForm extends React.Component {
               </a>
             </div>
           </div>
+          <div class = 'center'>
           <ListProduct />
+          </div>
         </div>
       )
     }

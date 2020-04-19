@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { connect } from 'react-redux'
 import ProductList from './ProductList'
 import InputForm from './InputForm'
-import Carousel from './Carousel'
+import Carousel from './Carousel/Carousel'
 import Nav from './Nav';
 import Main from './main/main'
 
