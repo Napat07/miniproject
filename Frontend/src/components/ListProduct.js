@@ -6,6 +6,7 @@ import InputForm from './InputForm'
 import Carousel from './Carousel/Carousel'
 import Nav from './Nav';
 import Main from './main/main'
+import ListforUser from './page/ListforUser';
 
 const ListStaff = () =>{
 
@@ -19,6 +20,7 @@ const ListStaff = () =>{
       <h1>Products</h1>
       <ProductList  />
       <h1>--------------------------------------</h1>
+      <ListforUser/>
 
     </div>
 	)

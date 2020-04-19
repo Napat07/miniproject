@@ -1,0 +1,4 @@
+.productlist-container {
+    display: flex;
+    flex-wrap: wrap;
+}
