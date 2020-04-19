@@ -20,7 +20,7 @@ const ProductCard = props => {
     return (
         <div className='productcard-container'>
             <div className='productcard' style={{ backgroundImage: `url('${props.img}')` }}>
-                <p className='productcard-price'>{props.price}</p>
+                <p className='productcard-price'>{props.price} ฿</p>
                 <p className='productcard-name'>{props.name}</p>
             </div>
             <div className='productcard-actions'>

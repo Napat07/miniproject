@@ -21,34 +21,32 @@ const InputForm = props => {
     return (
         <div className='form-container'>
             <h2>Add Product</h2>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Name</td>
-                        <td>
-                            <input className='inpt' type="text" onChange={(e) => dispatch({ type: "CHANGE_NAME", name: e.target.value })} />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Price</td>
-                        <td>
-                            <input className='inpt' type="number" onChange={(e) => dispatch({ type: "CHANGE_PRICE", price: e.target.value })} />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Image</td>
-                        <td>
-                            <input className='inpt' type="text" onChange={(e) => dispatch({ type: "CHANGE_IMG", img: e.target.value })} /> <br />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
+            
+           
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label ">Name</label>
+                        <div class="col-sm-7">
+                        <input type="text" class="form-control"  placeholder="Input Product" onChange={(e) => dispatch({ type: "CHANGE_NAME", name: e.target.value })} />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Price</label>
+                        <div class="col-sm-7">
+                        <input type="number" class="form-control"  placeholder="Input Price" onChange={(e) => dispatch({ type: "CHANGE_PRICE", price: e.target.value })} />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Image </label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" placeholder="Input Product Image" onChange={(e) => dispatch({ type: "CHANGE_IMG", img: e.target.value })} /> <br />
+                            </div>
+                    </div>
+                    <div class="form-group row">
+                    <div class="col-sm-5">
                             <button type="button" class="btn btn-success" onClick={addProduct}>CREATE</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            </div>
+                    </div>
+      
         </div>
     )
 }
