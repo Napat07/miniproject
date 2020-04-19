@@ -6,8 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CardforUser = props => {
 
-    const dispatch = useDispatch()
-    const form = useSelector(state => state.form)
 
     return (
         <div className='productcard-container'>
