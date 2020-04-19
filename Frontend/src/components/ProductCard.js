@@ -2,6 +2,8 @@ import React from 'react';
 import './ProductCard.css';
 import {useDispatch, useSelector} from 'react-redux'
 import axios from 'axios'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const ProductCard = props => {
 
     const dispatch = useDispatch()
@@ -22,8 +24,8 @@ const ProductCard = props => {
                 <p className='productcard-name'>{props.name}</p>
             </div>
             <div className='productcard-actions'>
-                <div onClick={updateProduct}>Update</div>
-                <div onClick={deleteProduct}>Delete</div>
+                <div type="button" class="btn btn-warning" onClick={updateProduct}>Update</div>
+                <div type="button" class="btn btn-danger" onClick={deleteProduct}>Delete</div>
             </div>
         </div>
 

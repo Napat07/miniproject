@@ -20,7 +20,7 @@ const InputForm = props => {
 
     return (
         <div className='form-container'>
-            <h2>Add Cat</h2>
+            <h2>Add Product</h2>
             <table>
                 <tbody>
                     <tr>
@@ -44,7 +44,7 @@ const InputForm = props => {
                     <tr>
                         <td></td>
                         <td>
-                            <button className='btn' onClick={addProduct}>CREATE</button>
+                            <button type="button" class="btn btn-success" onClick={addProduct}>CREATE</button>
                         </td>
                     </tr>
                 </tbody>

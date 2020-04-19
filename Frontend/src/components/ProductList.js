@@ -3,6 +3,8 @@ import ProductCard from './ProductCard';
 import './ProductList.css';
 import axios from 'axios'
 import { useSelector, useDispatch } from 'react-redux'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const ProductList = props => {
     const products = useSelector(state => state.products);
     const dispatch = useDispatch();
