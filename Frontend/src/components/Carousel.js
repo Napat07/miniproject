@@ -13,7 +13,7 @@ function ControlledCarousel() {
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-flex justify-content-center"
             src="https://images.wallpaperscraft.com/image/sea_surface_water_120239_1600x1200.jpg"
             alt="First slide"
           />
@@ -24,7 +24,7 @@ function ControlledCarousel() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-80"
             src="https://images.wallpaperscraft.com/image/sea_surface_water_117993_1600x1200.jpg"
             alt="Second slide"
           />
@@ -36,7 +36,7 @@ function ControlledCarousel() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-80"
             src="https://images.wallpaperscraft.com/image/vinyl_turntable_records_headphones_107378_1600x1200.jpg"
             alt="Third slide"
           />

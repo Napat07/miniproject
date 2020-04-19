@@ -1,7 +1,7 @@
 import React from 'react'
 import auth from '../firebase'
 import './LoginForm.css'
-import ListStaff from './ListStaff'
+import ListProduct from './ListProduct'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class LoginForm extends React.Component {
@@ -72,17 +72,12 @@ class LoginForm extends React.Component {
               <a>
                 Hello {currentUser.email} <button className="button is-danger" onClick={this.logout}>Logout</button><br></br>
               </a>
-              
             </div>
-
           </div>
-
-          <ListStaff />
+          <ListProduct />
         </div>
       )
-
     }
-
     return (
       <section className="section container">
         <h1>Login</h1>

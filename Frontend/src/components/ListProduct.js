@@ -4,7 +4,8 @@ import { connect } from 'react-redux'
 import ProductList from './ProductList'
 import InputForm from './InputForm'
 import Carousel from './Carousel'
-import Nav from './Navbar'
+import Nav from './Nav';
+import Main from './main/main'
 
 const ListStaff = () =>{
 
@@ -12,6 +13,7 @@ const ListStaff = () =>{
 		<div class ='cen'>
       <Nav/>
       <Carousel/>
+      <Main/>
       <h1>Cats</h1>
       <ProductList  />
       <h1>--------------------------------------</h1>
