@@ -24,8 +24,8 @@ const ProductCard = props => {
                 <p className='productcard-name'>{props.name}</p>
             </div>
             <div className='productcard-actions'>
-                <div type="button" class="btn btn-warning" onClick={updateProduct}>Update</div>
-                <div type="button" class="btn btn-danger" onClick={deleteProduct}>Delete</div>
+                <div type="button" class="button is-warning" onClick={updateProduct}>Update</div>
+                <div type="button" class="button is-danger" onClick={deleteProduct}>Delete</div>
             </div>
         </div>
 
