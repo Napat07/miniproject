@@ -11,7 +11,7 @@ import ListforUser from './page/ListforUser';
 const ListStaff = () =>{
 
 	return(
-		<div class ='cen'>
+		<div >
       <Nav/>
       <Carousel/>
       <Main/>
