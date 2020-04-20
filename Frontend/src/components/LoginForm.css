@@ -9,3 +9,8 @@ h1{
 .center{
     text-align: center;
 }
+
+.left{
+    color: black;
+    text-align: left;
+}

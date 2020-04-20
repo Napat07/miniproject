@@ -14,7 +14,7 @@ const CardforUser = props => {
                 <p className='productcard-name'>{props.name}</p>
             </div>
             <div className='productcard-actions'>
-                <div type="button" class="btn btn-primary" >Buy</div>
+                <div type="button" class="button is-info " >Buy</div>
             </div>
         </div>
 

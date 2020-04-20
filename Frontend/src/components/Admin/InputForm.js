@@ -2,6 +2,7 @@ import React from 'react';
 import './InputForm.css';
 import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const InputForm = props => {
     const { data, onChange } = props;
@@ -43,7 +44,7 @@ const InputForm = props => {
                     </div>
                     <div class="form-group row">
                     <div class="col-sm-5">
-                            <button type="button" class="btn btn-success" onClick={addProduct}>CREATE</button>
+                            <button type="button" class="button is-success is-large" onClick={addProduct}>CREATE</button>
                             </div>
                     </div>
       
@@ -51,4 +52,4 @@ const InputForm = props => {
     )
 }
 
-export default InputForm
+export default InputForm;
