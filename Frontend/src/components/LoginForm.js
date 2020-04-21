@@ -4,6 +4,7 @@ import './LoginForm.css'
 import ListProduct from './ListProduct'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './Nav';
+import '../App.css'
 class LoginForm extends React.Component {
   constructor(props) {
     super(props)
@@ -66,11 +67,13 @@ class LoginForm extends React.Component {
 
     if (currentUser) {
       return (
-        <div>
+        <div class = "All">
           <div class='right'>
             <div >
               <a><button className="button is-text" onClick={this.logout}>Logout</button><br></br>
+              
               </a>
+    
             </div>
           </div>
   

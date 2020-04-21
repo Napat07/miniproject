@@ -17,10 +17,7 @@ export default function Nav() {
       <div>
         <nav div class = 'left'>
               <Link type="button" class="button is-text"  to="/">Home</Link>
-              
-
               <Link  type="button" class="button is-text" to="/ShopforUser">Users</Link>
- 
               <Link  type="button" class="button is-text" to="/ShopforAdmin">Admin</Link>
         </nav>
         <Switch>
