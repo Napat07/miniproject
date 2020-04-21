@@ -1,7 +1,5 @@
 import React from 'react';
 import './CardforUser.css';
-import {useDispatch, useSelector} from 'react-redux'
-import axios from 'axios'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CardforUser = props => {

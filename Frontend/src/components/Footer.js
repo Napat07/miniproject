@@ -16,7 +16,7 @@ function Footer () {
                 <Row >
                     <Col md="3">
                         <NavbarBrand href="/">
-                            <img src="./logo-wi.PNG"  class="round_image" alt="..."/>
+                            <img src="/logo-wi.PNG"  class="round_image" alt="..."/>
                         </NavbarBrand>
                     </Col>
                     <Col lg="6" style={{marginTop:10}} >
