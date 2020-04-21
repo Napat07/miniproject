@@ -1,9 +1,10 @@
 import React from 'react';
 import { Container, Row, Col,NavbarBrand} from 'reactstrap';
 import './footerStyle.css';
-import { MdPhone,MdPlace,MdMail } from "react-icons/md";
+import { MdPhone } from "react-icons/md";
 import { FaFacebook ,FaGithub} from "react-icons/fa";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './LoginForm.css'
 
 function Footer () {
     return (
@@ -13,9 +14,9 @@ function Footer () {
             <footer  className="Footer-BackGround-Color">
             <Container >
                 <Row >
-                    <Col md="2">
+                    <Col md="3">
                         <NavbarBrand href="/">
-                            <img src="./market-logo.png" className="d-block w-100" alt="..."/>
+                            <img src="./logo-wi.PNG"  class="round_image" alt="..."/>
                         </NavbarBrand>
                     </Col>
                     <Col lg="6" style={{marginTop:10}} >

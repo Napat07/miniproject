@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'reactstrap';
+import { Container,Row,Col,FormGroup,NavbarBrand} from 'reactstrap';
 import './MainStyle.css'
 
 export default function Container1 () {
@@ -11,13 +11,45 @@ export default function Container1 () {
 					<div class="row">
 						{/*<---------------------------------------->*/}
 						<div class="col-md-6 mb-4 background-color-for-shop">
-							<a>wajkdawdjawgdkawdkhakwd</a>
+						<Row>
+          						<Col mb="15">
+            						<FormGroup>
+										<NavbarBrand href="/ShopforUser">
+											<img src="/sale1.PNG"  />
+										</NavbarBrand>
+									</FormGroup>
+          						</Col>
+          						<Col mb="6">
+            						<FormGroup>
+										<NavbarBrand href="/ShopforUser">
+											<img src="/sale2.PNG"  />
+										</NavbarBrand>
+            						</FormGroup>
+          						</Col>
+       	 					</Row>							
+								<Row>
+          						<Col mb="6">
+            						<FormGroup>
+										<NavbarBrand href="/ShopforUser">
+											<img src="/sale3.PNG" />
+										</NavbarBrand>
+									</FormGroup>
+          						</Col>
+
+          						<Col mb="6">
+            						<FormGroup>
+										<NavbarBrand href="/ShopforUser ">
+											<img src="/sale4.PNG" />
+            							</NavbarBrand>
+									</FormGroup>
+          						</Col>
+       	 					</Row>
 						</div>
-					
-						{/*<---------------------------------------->*/}
 						
-						<div class="col-md-6 mb-4">
-							<img src="https://gdb.voanews.com/24A4525A-A09E-42FF-A1CE-B0C291CE5325_cx0_cy11_cw0_w1080_h608_s.jpg" alt="shop"  className="img-radius img-fluid z-depth-1-half" />
+						<div class="col-md-6 mb-4">		
+							<img src="/highlight.PNG" alt="test" className="img-radius img-fluid  hoverable z-depth-1 " />
+							<a href="/ShopforUser"><img src="/highlight4.PNG" alt="test" className="img-radius img-fluid  hoverable z-depth-1 " /> </a>
+							<a href="/ShopforUser"><img src="/highlight2.PNG" alt="test" className="img-radius img-fluid  hoverable z-depth-1 " /> </a>
 						</div>
 					</div>
 			  </section>

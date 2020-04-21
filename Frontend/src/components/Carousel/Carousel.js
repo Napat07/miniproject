@@ -5,15 +5,15 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import 'bootstrap-css-only/css/bootstrap.min.css';
 const items = [
   {
-    src: "https://www.lombardvet.com/sites/default/files/08-cat-cancer-4.jpeg"
+    src: "/con3.PNG"
     
   },
   {
-    src: "https://img.huffingtonpost.com/asset/5dcc613f1f00009304dee539.jpeg?cache=QaTFuOj2IM&ops=crop_834_777_4651_2994%2Cscalefit_720_noupscale"
+    src: "/con4.PNG"
     
   },
   {
-    src: "https://cdn.pixabay.com/photo/2016/01/20/13/05/cat-1151519__340.jpg"
+    src: "/con5.PNG"
 
   }
 ];

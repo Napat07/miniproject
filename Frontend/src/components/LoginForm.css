@@ -14,3 +14,13 @@ h1{
     color: black;
     text-align: left;
 }
+
+.round_image{
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: #000 0 2px 10px;
+    -moz-box-shadow: #000 0 2px 10px;
+    box-shadow: #000 0 2px 10px;
+    }

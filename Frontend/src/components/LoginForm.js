@@ -85,6 +85,10 @@ class LoginForm extends React.Component {
     }
     return (
       <section className="section container">
+        <div class ="center">
+        <img src = "/logo-head.PNG" width="500" height="500" class = "round_image"/>
+        </div>
+        &nbsp; 
         <h1>Login</h1>
         <div className="columns is-centered">
           <div className="column is-half">

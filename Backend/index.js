@@ -8,8 +8,7 @@ let app = express();
 
 app.use(cors());
 
-// all of our routes will be prefixed with /api
-app.use('/api', bodyParser.json(), router);   //[use json]
+app.use('/api', bodyParser.json(), router); 
 app.use('/api', bodyParser.urlencoded({ extended: false }), router);
 
 let products = [
