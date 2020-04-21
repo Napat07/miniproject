@@ -1,12 +1,10 @@
-
-
 import React from 'react'
 import auth from '../firebase'
 import './LoginForm.css'
-import ListProduct from './ListProduct'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './Nav';
 import '../App.css'
+import Footer from './Footer'
 class LoginForm extends React.Component {
   constructor(props) {
     super(props)
@@ -70,18 +68,17 @@ class LoginForm extends React.Component {
     if (currentUser) {
       return (
         <div class = "All">
-          <div class='right'>
-            <div >
-              <a><button className="button is-text" onClick={this.logout}>Logout</button><br></br>
-              
-              </a>
-    
-            </div>
-          </div>
-  
+          <div >
           <div class = 'center'>
           <Nav/>
           </div>
+            <div class='right'>
+            <a  bg="dark" variant="light"><button className="button is-danger is-large" onClick={this.logout}>Logout</button>
+              </a>
+            </div>
+          </div>
+
+         <Footer/> 
         </div>
       )
     }

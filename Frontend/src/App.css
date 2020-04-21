@@ -28,10 +28,11 @@
 }
 
 .All{
+  background: silver repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
-  background-color : silver;
-  background-repeat: repeat;
 
 }
 .test{
