@@ -3,7 +3,7 @@ import auth from '../firebase'
 import './LoginForm.css'
 import ListProduct from './ListProduct'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navb from './Navb';
+import Nav from './Nav';
 class LoginForm extends React.Component {
   constructor(props) {
     super(props)
@@ -69,13 +69,13 @@ class LoginForm extends React.Component {
         <div>
           <div class='right'>
             <div >
-              <a><button className="button is-danger" onClick={this.logout}>Logout</button><br></br>
+              <a><button className="button is-text" onClick={this.logout}>Logout</button><br></br>
               </a>
             </div>
           </div>
   
           <div class = 'center'>
-          <Navb/>
+          <Nav/>
           </div>
         </div>
       )
