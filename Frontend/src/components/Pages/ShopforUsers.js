@@ -8,8 +8,7 @@ const ShopforUsers = () => {
     return (
         <div >
             <CarouselShop /> 
-            <br /> <br />
-            <br /> <br />
+            <img src='shop.png' width='280'/>
             <ListforUser />
         </div>
     )

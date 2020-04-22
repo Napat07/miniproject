@@ -20,9 +20,9 @@ const InputForm = props => {
     }
 
     return (
-        <div className='form-container'>
-            <h2>Add Product</h2>
-            
+        <div className=''>
+            <a ><img src='addProduct.png' width='260'/></a>
+            {/* <h1>Add Product</h1> */}
            
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label ">Name</label>
