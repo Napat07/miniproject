@@ -23,3 +23,7 @@ h1{
     -moz-box-shadow: #000 0 2px 10px;
     box-shadow: #000 0 2px 10px;
     }
+
+.black-color{
+    background-color: black;
+    }

@@ -69,13 +69,18 @@ class LoginForm extends React.Component {
       return (
         <div class = "All">
           <div >
+          <div class='black-color'>
+            <div class='right'>
+              <button className="button is-danger" onClick={this.logout}>Logout</button>
+            </div>
+            </div>
           <div class = 'center'>
+            <div class ='black-color'>
+            <img src='/logo-big.PNG' class='round_image' width="800"  height="1000"/>
+            </div>
           <Nav/>
           </div>
-            <div class='right'>
-            <a  bg="dark" variant="light"><button className="button is-danger is-large" onClick={this.logout}>Logout</button>
-              </a>
-            </div>
+         
           </div>
 
          <Footer/> 
