@@ -47,9 +47,9 @@ export default function Container1 () {
 						</div>
 						
 						<div class="col-md-6 mb-4">		
-							<img src="/highlight.PNG" alt="test" className="img-radius img-fluid  hoverable z-depth-1 " />
-							<a href="/ShopforUser"><img src="/highlight4.PNG" alt="test" className="img-radius img-fluid  hoverable z-depth-1 " /> </a>
-							<a href="/ShopforUser"><img src="/highlight2.PNG" alt="test" className="img-radius img-fluid  hoverable z-depth-1 " /> </a>
+							<img src="/highlight6.PNG" alt="test" className="img-radius img-fluid  hoverable z-depth-1 " />
+							<a href="/ShopforUser"><img src="/highlight5.PNG" alt="test" className="img-radius img-fluid  hoverable z-depth-1 " width='500' /> </a>
+							{/* <a href="/ShopforUser"><img src="/highlight7.PNG" alt="test" className="img-radius img-fluid  hoverable z-depth-1 " /> </a> */}
 						</div>
 					</div>
 			  </section>

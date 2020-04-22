@@ -5,20 +5,20 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import 'bootstrap-css-only/css/bootstrap.min.css';
 const items = [
   {
-    src: "/con2.PNG"
+    src: "conh1.PNG"
     
   },
   {
-    src: "/con4.PNG"
+    src: "conh2.PNG"
     
   },
   {
-    src: "/con5.PNG"
+    src: "conh3.PNG"
 
   }
 ];
 
-class Example extends Component {
+class CHome extends Component {
   constructor(props) {
     super(props);
     this.state = { activeIndex: 0 };
@@ -64,7 +64,7 @@ class Example extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img src={item.src} alt={item.altText} width= "1500" height= "800" className="margin-top"  />
+          <img src={item.src} alt={item.altText} width= "1500" height= "700" className="margin-top"  />
         </CarouselItem>
       );
     });
@@ -85,4 +85,4 @@ class Example extends Component {
 }
 
 
-export default Example;
+export default CHome;
