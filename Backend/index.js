@@ -12,12 +12,22 @@ app.use('/api', bodyParser.json(), router);
 app.use('/api', bodyParser.urlencoded({ extended: false }), router);
 
 let products = [
-    { 'id': 0, 'name': 'Cat', 'price': 007, 'img': 'https://i.pinimg.com/736x/60/d9/26/60d9269a5ada1ee5e2f5161d036209e5.jpg' },
-    { 'id': 1, 'name': 'Catcat', 'price': 111, 'img': 'https://i.pinimg.com/originals/f3/bd/84/f3bd8497e15399201b634714ec5ed390.jpg' },
-    { 'id': 2, 'name': 'Cat3', 'price': 213, 'img': 'https://i.imgur.com/gdWIxn2.jpg' },
-    { 'id': 3, 'name': 'Cat4', 'price': 652, 'img': 'https://lh3.googleusercontent.com/ObdbSatQvNUymufVs3vL5YmhGdvs3w5vvTciaGLFQOZoREVAEIIueioFOrWk9je_fqxR' },
-    { 'id': 4, 'name': 'Cat5', 'price': 43, 'img': 'https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&w=1000&q=80' },
-    { 'id': 5, 'name': 'Cat6', 'price': 34, 'img': 'https://fsb.zobj.net/crop.php?r=DIRnAiiiyJkFkfpMsvWknlEIXkuYLfYvI-s3DG3Afrdgn54EWiIqaNqyjomP1mJo8-iAIaZo8J6kdNhqsDwLm8b90xiYYxYOirvHOlW-SCHgqgsNsidIfDxCmtJjgK5LfIQkKEU3uxI1Yv1H' }
+    { 'id': 0, 'name': 'Acer Nitro AN515-54-53RW', 'price': 20490, 'img': '/product1.PNG' },
+    { 'id': 1, 'name': 'Comset Ryzen & Intel', 'price': 19990, 'img': 'product2.png' },
+    { 'id': 2, 'name': 'EGA TYPE H5', 'price': 329, 'img': 'product3.png' },
+    { 'id': 3, 'name': 'EGA TYPE H5', 'price': 329, 'img': 'product3.png' },
+    { 'id': 4, 'name': 'EGA TYPE H5', 'price': 329, 'img': 'product3.png' },
+    { 'id': 5, 'name': 'EGA TYPE H5', 'price': 329, 'img': 'product3.png' },
+    { 'id': 6, 'name': 'EGA TYPE H5', 'price': 329, 'img': 'product3.png' },
+    { 'id': 7, 'name': 'EGA TYPE H5', 'price': 329, 'img': 'product3.png' },
+    { 'id': 8, 'name': 'EGA TYPE H5', 'price': 329, 'img': 'product3.png' },
+    { 'id': 9, 'name': 'EGA TYPE H5', 'price': 329, 'img': 'product3.png' },
+    { 'id': 10, 'name': 'EGA TYPE H5', 'price': 329, 'img': 'product3.png' },
+    { 'id': 11, 'name': 'EGA TYPE H5', 'price': 329, 'img': 'product3.png' },
+    { 'id': 12, 'name': 'EGA TYPE H5', 'price': 329, 'img': 'product3.png' },
+    { 'id': 13, 'name': 'EGA TYPE H5', 'price': 329, 'img': 'product3.png' },
+    { 'id': 14, 'name': 'EGA TYPE H5', 'price': 329, 'img': 'product3.png' },
+    { 'id': 15, 'name': 'EGA TYPE H5', 'price': 329, 'img': 'product3.png' }
 ];
 
 router.route('/products')

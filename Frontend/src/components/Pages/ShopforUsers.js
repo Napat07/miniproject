@@ -7,7 +7,9 @@ const ShopforUsers = () => {
 
     return (
         <div >
-            <Carousel />
+            <Carousel /> 
+            <br /> <br />
+            <br /> <br />
             <ListforUser />
         </div>
     )

@@ -9,10 +9,13 @@ const ShopforAdmin = () =>{
 
 	return(
 	    <div>
-            <Carousel/>
+            <br />
+            <br />
             <InputForm />
-            <h2>--------------------------------------</h2>
+            <br />
+            <br />
             <h1>Products</h1>
+            <br />
             <ProductList  />
         </div>
 	)
