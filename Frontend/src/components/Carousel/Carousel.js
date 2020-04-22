@@ -5,15 +5,15 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import 'bootstrap-css-only/css/bootstrap.min.css';
 const items = [
   {
-    src: "/con2.PNG"
+    src: "https://cf.shopee.co.th/file/436b2ab2a6ae174b164a33478b26437b"
     
   },
   {
-    src: "/con4.PNG"
+    src: "https://cf.shopee.co.th/file/d0c8cf9163f55ad721ed3fcbadc2c426"
     
   },
   {
-    src: "/con5.PNG"
+    src: "https://cf.shopee.co.th/file/92fad805b8cdc9e0257e7244742ffe84"
 
   }
 ];
@@ -64,7 +64,7 @@ class Example extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img src={item.src} alt={item.altText} width= "1500" height= "800" className="margin-top"  />
+          <img src={item.src} alt={item.altText} width= "1000" height= "600" className="margin-top"  />
         </CarouselItem>
       );
     });

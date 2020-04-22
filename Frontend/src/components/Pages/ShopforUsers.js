@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CarouselHome from '../Carousel/CarouselHome'
+import CarouselShop from '../Carousel/CarouselShop'
 import ListforUser from '../Users/ListforUser';
 
 const ShopforUsers = () => {
 
     return (
         <div >
-            <CarouselHome /> 
+            <CarouselShop /> 
             <br /> <br />
             <br /> <br />
             <ListforUser />
