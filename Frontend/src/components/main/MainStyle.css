@@ -4,11 +4,12 @@
     margin-bottom: 10px;
   }
   .background-color1{
-    background-color: #6acde6;
+    background-color: #3db9c7;
+    /* background-color: #6acde6; */
   }
   
   .background-color2{
-    background-color: #2fbbad;
+    background-color: rgb(243, 122, 57);
   }
   
   .background-color-for-course{

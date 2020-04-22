@@ -7,7 +7,7 @@ import LoginForm from './components/LoginForm'
 const App = () => {
 	return (
 		<div class='bg' >
-			<div class=''>
+			<div class='bg2'>
 			<LoginForm />
 			</div>
 		</div>
