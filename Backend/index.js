@@ -35,10 +35,6 @@ let products = [
 router.route('/products')
     // get all products
     .get((req, res) => res.json(products))
-    app.get('/',(req,res) => {
-        console.log('Hello World')
-        res.send('Hello World')
-    })
     // insert a new product
     .post((req, res) => {
         var product = {};
