@@ -10,7 +10,7 @@ const ListforUser = props => {
     const dispatch = useDispatch();
 
     const getproducts = async () => {
-        const result = await axios.get(`http://localhost:${process.env.REACT_APP_PP}/api/products`)
+        const result = await axios.get(`https://miniproject-58007.herokuapp.com/api/products`)
         const action = { type: 'GET_products', products: result.data }
         dispatch(action)
     }

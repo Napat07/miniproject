@@ -12,18 +12,15 @@ const InputForm = props => {
     const form = useSelector(state => state.form)
 
     const addProduct = async () => {
-        const result = await axios.post(`http://localhost:${process.env.REACT_APP_PP}/api/products/`, form)
+        const result = await axios.post(`https://miniproject-58007.herokuapp.com/api/products/`, form)
         dispatch({ 
             type: "ADD_PRODUCT", 
             product: {...form,id:products.length > 0 ? products[products.length - 1].id+1 : 0} 
         })
     }
-
     return (
         <div className=''>
             <a ><img src='addProduct.png' width='260'/></a>
-            {/* <h1>Add Product</h1> */}
-           
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label ">Name</label>
                         <div class="col-sm-7">
