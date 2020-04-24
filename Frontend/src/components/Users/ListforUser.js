@@ -27,7 +27,7 @@ const ListforUser = props => {
             {
                 products.map((product, index) => (
                     <div key={index} style={{ margin: 5 }}>
-                        <CardforUser  {...product}  />
+                        <CardforUser  {...product} />
                     </div>
                 ))
             }

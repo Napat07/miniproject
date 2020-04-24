@@ -6,11 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const InputForm = props => {
     const { data, onChange } = props;
-
     const dispatch = useDispatch({})
     const products = useSelector(state => state.products)
     const form = useSelector(state => state.form)
-
     const addProduct = async () => {
         const result = await axios.post(`https://miniproject-58007.herokuapp.com/api/products/`, form)
         dispatch({ 
@@ -44,9 +42,7 @@ const InputForm = props => {
                             <button type="button" class="button is-success is-large" onClick={addProduct}>CREATE</button>
                             </div>
                     </div>
-      
         </div>
     )
 }
-
 export default InputForm;

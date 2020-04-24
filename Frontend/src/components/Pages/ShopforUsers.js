@@ -4,7 +4,6 @@ import CarouselShop from '../Carousel/CarouselShop'
 import ListforUser from '../Users/ListforUser';
 
 const ShopforUsers = () => {
-
     return (
         <div >
             <CarouselShop /> 

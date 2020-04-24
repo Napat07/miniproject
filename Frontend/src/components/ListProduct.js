@@ -5,14 +5,14 @@ import Main from './main/main'
 import Footer from './Footer'
 import '../App.css'
 
-const ListProduct = () =>{
+const ListProduct = () => {
 
-	return(
-      <div class ='cen'>
-      <Carousel/>
-      <Main/>
-     
-      </div>
-	)
+      return (
+            <div class='cen'>
+                  <Carousel />
+                  <Main />
+
+            </div>
+      )
 }
 export default ListProduct;

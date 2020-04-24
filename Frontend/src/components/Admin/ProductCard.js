@@ -3,16 +3,13 @@ import './ProductCard.css';
 import {useDispatch, useSelector} from 'react-redux'
 import axios from 'axios'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 const ProductCard = props => {
-
     const dispatch = useDispatch()
     const form = useSelector(state => state.form)
     const deleteProduct = async () => {
         const result = await axios.delete(`https://miniproject-58007.herokuapp.com/api/products/${props.id}`)
         dispatch({type : 'DELETE_PRODUCT', id: props.id})
       }
-    
     const updateProduct = async () => {
     const result = await axios.put(`https://miniproject-58007.herokuapp.com/api/products/${props.id}`,form)
     dispatch({type : 'UPDATE_PRODUCT', id: props.id , product: {...form, id: props.id}})
@@ -28,8 +25,6 @@ const ProductCard = props => {
                 <div type="button" class="button is-danger" onClick={deleteProduct}>Delete</div>
             </div>
         </div>
-
     )
 }
-
 export default ProductCard;

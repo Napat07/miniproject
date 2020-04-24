@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CardforUser = props => {
 
-
     return (
         <div className='productcard-container'>
             <div className='productcard' style={{ backgroundImage: `url('${props.img}')` }}>
