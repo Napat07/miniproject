@@ -3,7 +3,7 @@ import { act } from 'react-dom/test-utils';
 
 const initialForm = {
     name: "",
-    weigth: 0,
+    price: 0,
     img: ""
 }
 const formReducer = (data = initialForm, action) => {

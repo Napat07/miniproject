@@ -125,10 +125,10 @@ class LoginForm extends React.Component {
 
               <div className="field is-grouped">
                 <div className="control">
-                  <button className="button is-link">Submit</button>
+                  <button className="button is-success">Sign in</button>
                 </div>
                 <div className="control">
-                  <button className="button is-text">Cancel</button>
+                  <button className="button is-danger">Sign up</button>
                 </div>
               </div>
             </form>
