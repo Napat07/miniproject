@@ -1,10 +1,12 @@
 # miniproject 
-### 1st terminal for backend
-- `cd Backend`
-- `npm i`
-- `nodemon index.js`
 
-### 2nd terminal for frontend
+### terminal
 - `cd Frontend`
 - `npm i`
 - `npm start`
+
+### firebase hosting
+- `https://miniproject-240-311.firebaseapp.com/`
+
+### heroku API
+- `https://miniproject-58007.herokuapp.com/api/products`
