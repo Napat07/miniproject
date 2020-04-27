@@ -67,32 +67,32 @@ class LoginForm extends React.Component {
 
     if (currentUser) {
       return (
-        <div class = "All">
+        <div class="All">
           <div >
-          <div class='black-color'>
-            <div class='right'>
-              <button className="button is-danger" onClick={this.logout}>Logout</button>
+            <div class='black-color'>
+              <div class='right'>
+                <button className="button is-danger" onClick={this.logout}>Logout</button>
+              </div>
             </div>
+            <div class='center'>
+              <div class='black-color'>
+                <img src='/logo-big.PNG' class='round_image' width="800" height="1000" />
+              </div>
+              <Nav />
             </div>
-          <div class = 'center'>
-            <div class ='black-color'>
-            <img src='/logo-big.PNG' class='round_image' width="800"  height="1000"/>
-            </div>
-          <Nav/>
-          </div>
-         
+
           </div>
 
-         <Footer/> 
+          <Footer />
         </div>
       )
     }
     return (
       <section className="section container">
-        <div class ="center">
-        <img src = "/logo-head.PNG" width="400" height="400" class = "round_image"/>
+        <div class="center">
+          <img src="/logo-head.PNG" width="400" height="400" class="round_image" />
         </div>
-        &nbsp; 
+        &nbsp;
         <h1>Login</h1>
         <div className="columns is-centered">
           <div className="column is-half">

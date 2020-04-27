@@ -21,7 +21,7 @@ export default function Nav() {
       <div>
         <nav >
           <Navbar bg="dark" variant="light">
-            
+
             <Navbar.Brand href="/"><img href="/" src="/logo-wi.PNG" width="125" class="round_image" /></Navbar.Brand>
             <Link type="button" class="button is-link is-inverted is-outlined" to="/">Home</Link>&nbsp;
             <Link type="button" class="button is-link is-inverted is-outlined" to="/ShopforUser">Shop</Link>&nbsp;
