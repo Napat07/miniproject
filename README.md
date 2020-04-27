@@ -1,4 +1,6 @@
 # miniproject 
+`email : napat5835512007@psu.ac.th`
+`password : 12345678`
 
 ### terminal
 - `cd Frontend`
