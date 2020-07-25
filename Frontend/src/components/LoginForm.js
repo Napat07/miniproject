@@ -4,6 +4,7 @@ import './LoginForm.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './Nav';
 import '../App.css'
+
 import Footer from './Footer'
 class LoginForm extends React.Component {
   constructor(props) {
@@ -134,7 +135,12 @@ class LoginForm extends React.Component {
             </form>
           </div>
         </div>
+      <pre class = "center">
+          username : napat5835512007@psu.com <br></br>
+          pass : 12345678
+          </pre>
       </section>
+      
     )
   }
 }
